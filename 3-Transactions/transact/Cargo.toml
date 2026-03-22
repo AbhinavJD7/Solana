@@ -1,0 +1,12 @@
+[package]
+name = "transact"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.100"
+solana-client = "2.1"
+solana-commitment-config = "2.1"
+solana-sdk = "2.1"
+solana-system-interface = { version = "3.0.0", features = ["bincode"] }
+tokio = { version = "1.48.0", features = ["full"] }
