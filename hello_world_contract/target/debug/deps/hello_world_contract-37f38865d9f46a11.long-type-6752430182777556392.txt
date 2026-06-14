@@ -1,1 +1,0 @@
-fn(_) -> Result<InstructionData, <InstructionData as TryFrom<_>>::Error> {<InstructionData as TryFrom<_>>::try_from}
