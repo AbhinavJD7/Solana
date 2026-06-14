@@ -47,9 +47,3 @@ pub fn process_instrcution(
 }
 
 // We can't run this directly it is a library , not a binary
-//Assignment
-//Escrow program
-//If your employer has to send you money they will not directly send you money
-//they will call a smart contract (escrow program) and put the money there
-//Initialise another account on the solana blockchain store 96 byte of data and put enough sol
-//

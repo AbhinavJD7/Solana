@@ -1,0 +1,12 @@
+[package]
+name = "cpi-in-solana"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+borsh = "1.0.0"
+borsh-derive = "1.0.0"
+solana-program = "~1.18" # The standard library for Solana programs

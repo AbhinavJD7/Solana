@@ -5,7 +5,7 @@ import * as fs from "fs";
 const connection = new Connection("https://api.devnet.solana.com")
 
 //deployed program ID
-const PROGRAM_ID = new PublicKey("Fi5fhVtuDLpLy9BHBZAaiMNtDFt8eTpNjW67yyreNr8Z");
+const PROGRAM_ID = new PublicKey("8Yzp7nJSzHfveVkAPP3BSMfkGsn7BAvj7P1PjKsvoqy1");
 
 // Load your keypair (the one you used to deploy)
 const keypair = Keypair.fromSecretKey(
