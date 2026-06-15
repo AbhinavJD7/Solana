@@ -1,7 +1,7 @@
 use borsh::{BorshDeserialize, BorshSerialize};
 use solana_program::{account_info::{AccountInfo, next_account_info}, 
 entrypoint,
-entrypoint::{self, ProgramResult}, 
+entrypoint::ProgramResult, 
 pubkey::Pubkey
 };
 
@@ -30,6 +30,9 @@ fn process_instruction(
     counter.serialize(&mut *data_account.data.borrow_mut())?;
 
 
+//cargo build sdf 
+//then
+//solana program deploy "target/deploy/cpi_in_solana.so"
 
 
     Ok(())
