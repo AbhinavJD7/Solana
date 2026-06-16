@@ -8,13 +8,12 @@ import {
   LAMPORTS_PER_SOL, 
   TransactionInstruction
 } from "@solana/web3.js";
-import { pathToFileURL } from "bun";
 
 test("one transfer", () => {
   const svm = new LiteSVM();  
   const contractPubkey = PublicKey.unique();
   //loading our smart contract to the local SVM (solana virtual machine)
-  svm.addProgramFromFile(contractPubkey, '../target/deploy/cpi_in_solana.so');
+  svm.addProgramFromFile(contractPubkey, 'target/sbpf-solana-solana/release/cpi_in_solana.so');
   const payer = new Keypair();
   svm.airdrop(payer.publicKey, BigInt(LAMPORTS_PER_SOL));
 
@@ -68,4 +67,4 @@ Doubleit();
   console.log(newDataAcc?.data);
   console.log(newDataAcc); 
 
-});
+}); 

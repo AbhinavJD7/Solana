@@ -30,7 +30,7 @@ fn process_instruction(
     counter.serialize(&mut *data_account.data.borrow_mut())?;
 
 
-//cargo build sdf 
+//cargo build-sbf
 //then
 //solana program deploy "target/deploy/cpi_in_solana.so"
 
