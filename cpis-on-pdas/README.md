@@ -1,15 +1,6 @@
 # cpis-on-pdas
 
-To install dependencies:
+PDA + CPI without anchor
 
-```bash
-bun install
-```
+I have created a program that initialises a PDA on chain through a CPI
 
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.3.14. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
